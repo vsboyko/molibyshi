@@ -57,32 +57,3 @@ const news = new Swiper(".article__slider", {
     prevEl: ".slider-navigation__news-btn-prev",
   },
 });
-
-const pressSlider = new Swiper(".js-press-slider-init", {
-  direction: "vertical",
-  slidesPerView: 4,
-  loop: true,
-  speed: 600,
-  navigation: {
-    nextEl: ".js-press-slider-btn-next",
-    prevEl: ".js-press-slider-btn-prev",
-  },
-  breakpoints: {
-    0: {
-      spaceBetween: 20,
-      slidesPerView: 1,
-    },
-    575: {
-      spaceBetween: 20,
-      slidesPerView: 2,
-    },
-    1199: {
-      spaceBetween: 20,
-      slidesPerView: 3,
-    },
-    1601: {
-      spaceBetween: 40,
-      slidesPerView: 4,
-    },
-  },
-});
