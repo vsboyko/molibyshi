@@ -2759,6 +2759,8 @@ body.is-press-opened .site-actions {
 
 .offers__aside-router,
 .press__aside-router {
+  position: relative;
+  z-index: 1;
 }
 
 .offers__main,
