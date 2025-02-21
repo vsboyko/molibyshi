@@ -3051,7 +3051,19 @@ body.is-press-opened .site-actions {
 .press__body {
   margin: auto 0;
   padding: 40px 0;
-  overflow: hidden;
+}
+
+.press__list {
+  margin: 0 -20px -40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.press__list-col {
+  max-width: 25%;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  flex: 0 0 25%;
 }
 
 .preloader {
@@ -3141,6 +3153,15 @@ body.is-press-opened .site-actions {
     "ierog-stix", sans-serif;
 }
 
+@media (max-width: 1600px) {
+  .press__list {
+  }
+  .press__list-col {
+    max-width: 33.33333%;
+    flex-basis: 33.33333%;
+  }
+}
+
 @media (max-width: 1199px) {
   .press__main {
     padding-right: 230px;
@@ -3174,7 +3195,17 @@ body.is-press-opened .site-actions {
     font-size: 16px;
   }
   .offers__header-logo {
-    display: none;
+    margin-bottom: 15px;
+  }
+  .press__list {
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+  .press__list-col {
+    max-width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-basis: 50%;
   }
 }
 
@@ -3195,12 +3226,10 @@ body.is-press-opened .site-actions {
   }
   .press__main,
   .offers__main {
-    max-width: 68vw;
-    padding: 50px 0 50px 20px;
+    padding: 50px 20px;
     overflow: initial;
   }
   .press__header-title {
-    margin-right: -30vw;
   }
   .press-card {
     font-size: 14px;
@@ -3213,7 +3242,7 @@ body.is-press-opened .site-actions {
     flex-basis: 100%;
   }
   .offers__header {
-    margin-right: -32vw;
+    margin-right: 0;
   }
   .offers__header-title:before,
   .offers__header-title:after {
@@ -3221,6 +3250,12 @@ body.is-press-opened .site-actions {
   }
   .offers {
     display: block;
+  }
+  .press__body {
+    padding-top: 70px;
+  }
+  .offers__list {
+    padding-top: 40px;
   }
 }
 
@@ -3232,5 +3267,13 @@ body.is-press-opened .site-actions {
     max-width: 100%;
     margin: 0 0 4px;
     flex: 0 0 100%;
+  }
+  .press__list-col {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .press__body,
+  .offers__list {
+    padding-top: 20px;
   }
 }

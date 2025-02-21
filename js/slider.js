@@ -59,6 +59,8 @@ const news = new Swiper(".article__slider", {
 });
 
 const pressSlider = new Swiper(".js-press-slider-init", {
+  direction: "vertical",
+  slidesPerView: 4,
   loop: true,
   speed: 600,
   navigation: {
